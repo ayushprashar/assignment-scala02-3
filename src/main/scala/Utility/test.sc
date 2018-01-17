@@ -12,4 +12,5 @@ def splitList[A](l:List[A],f:A=>Boolean): (List[A],List[A]) = {
   }
   splitter(l,passList,failList)
 }
-splitList(List(1,"Hi",Nil,6),(input: A)=> input.isInstanceOf[Int])
+
+splitList[String](List("Hia","Helllo"),str => str.length == 3)

@@ -31,8 +31,6 @@ class Operations {
     }
   }
 
-
-
   def splitList[A](l:List[A],f:A=>Boolean): (List[A],List[A]) = {
     val passList: List[A] = List()
     val failList: List[A] = List()
